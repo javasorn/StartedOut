@@ -1,1 +1,1 @@
-- C# .net5 MVC + AdminLTE
+- MvcAdminLTE: C# .net5 MVC + AdminLTE  
