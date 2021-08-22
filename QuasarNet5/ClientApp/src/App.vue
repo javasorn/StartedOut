@@ -1,26 +1,16 @@
-<template>
-  <nav-menu></nav-menu>
-  <router-view />
+<template lang="pug">
+  div(id="q-app")
+    router-view
 </template>
 
-<script>
-    import NavMenu from './components/NavMenu.vue'
+<script lang="ts">
+import { Component, Vue} from 'vue-property-decorator';
+@Component
+export default class App extends Vue {
 
-export default {
-  name: 'App',
-  components: {
-      NavMenu
-  }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="stylus">
+
 </style>
