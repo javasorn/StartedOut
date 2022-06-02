@@ -12,7 +12,7 @@ namespace AzureFunctionApp
         public static async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequestData req,
             FunctionContext executionContext)
         {
-            var logger = executionContext.GetLogger("HelloFunction");
+            var logger = executionContext.GetLogger("FunctionAppLogs");
             logger.LogInformation("C# HTTP trigger function processed a request.");
 
             var queryDictionary = Microsoft.AspNetCore.WebUtilities.QueryHelpers.ParseQuery(req.Url.Query);
