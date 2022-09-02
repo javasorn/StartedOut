@@ -2,3 +2,4 @@ inoremap kj <ESC>
 map gr :vsc Edit.FindAllReferences<CR>
 map gp :vsc Edit.PeekDefinition<CR>
 map gi :vsc Edit.GoToImplementation<CR>
+:set clipboard=unnamed
